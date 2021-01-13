@@ -41,9 +41,9 @@ dotenv
 migrations/
 env/
 venv/
-# .env
-# .env.development
-# .env.production
+.env
+.env.development
+.env.production
 .vscode/
 bin/
 Pipfile
