@@ -1,0 +1,6 @@
+EXACT_PATH_API = '/taskbook/api/v1.0.0/users'
+LOGIN_PATH = f'{EXACT_PATH_API}/login'
+REGISTER_PATH = f'{EXACT_PATH_API}/register'
+GET_USER_LIST_PATH = f'{EXACT_PATH_API}/user_list'
+REFRESH_ACCESS_TOKEN = f'{EXACT_PATH_API}/refresh_access_token'
+STUDENTS = f'{EXACT_PATH_API}/students'

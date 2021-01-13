@@ -41,6 +41,7 @@ dotenv
 migrations/
 env/
 venv/
+*.env
 .env
 .env.development
 .env.production

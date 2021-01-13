@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_cors import CORS
-from .ext import login_manager, api
+from .ext import login_manager
+from app.api import api_bp
 
 def create_app(setting_module=None):
     
@@ -15,7 +16,9 @@ def create_app(setting_module=None):
     
     # Integracion de librerias
     CORS(app)
-    api.init_app(app)
     login_manager.init_app(app)
+    
+    # Integrancion de planos
+    app.register_blueprint(api_bp)
     
     return app
